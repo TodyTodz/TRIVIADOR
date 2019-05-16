@@ -1,0 +1,28 @@
+﻿<Page x:Class="WpfApp2.Reg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="284" d:DesignWidth="444"
+      Title="Reg">
+
+    <Grid>
+
+        <TextBox Name="Login" HorizontalAlignment="Left" Height="23" Margin="155,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="Password" HorizontalAlignment="Left" Height="23" Margin="156,137,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="Pass_Copy" HorizontalAlignment="Left" Height="23" Margin="156,183,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="156,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="156,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Повтор пароля:" HorizontalAlignment="Left" Margin="156,157,0,0" VerticalAlignment="Top"/>
+        <Label Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="127,38,0,0" VerticalAlignment="Top" Width="170" Foreground="Red"/>
+        <Button Click="Button_Click_reg"  Content="Регистрация" ToolTip="Регистрация" Margin="156,219,0,0" VerticalAlignment="Top" Width="120" Background="#FFDDDDDD" Height="25" HorizontalAlignment="Left"/>
+        <Button Click="Button_Click_back" Content="Назад" ToolTip="Регистрация" Margin="188,254,0,0" VerticalAlignment="Top" Width="54" Background="#FFDDDDDD" Height="20" HorizontalAlignment="Left"/>
+        <StackPanel Name="Panel" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="450" Margin="0,0,-0.4,0" Background="#FFEE8888">
+            <Label Name="Authorized" Content="        Регистрация" FontSize="24" Margin="0,0,9.6,0"/>
+        </StackPanel>
+
+
+    </Grid>
+</Page>
